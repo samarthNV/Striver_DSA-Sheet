@@ -1,23 +1,20 @@
 // Optimal Solution
 
-    // void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-    //     int left = m-1;
-    //     int right = 0;
-
-    //     while(left >= 0 && right < n){
-    //         if(nums1[left] > nums2[right]){
-    //             swap(nums1[left], nums2[right]);
-    //             left--;
-    //             right++;
-    //         }
-    //         else{
-    //             break;
-    //         }
+    // vector<int> findNumbers(vector<int> &arr) {
+    
+    //     int n = arr.size();
+    //     ll num = (n*(n+1))/2;
+    //     ll num2 = (n*(n+1)*(2*n+1))/6;
+    //     ll sum = 0, sum2 = 0;
+    //     for(int i = 0; i < n; i++){
+    //         sum += arr[i];
+    //         sum2 += arr[i]*arr[i];
     //     }
-    //     sort(nums1.begin(), nums1.begin()+m); // Sorting till m^th index
-    //     sort(nums2.begin(), nums2.end());
-
-    //     for(int i=m; i<m+n; i++){
-    //         nums1[i] = nums2[i-m];
-    //     }
+    //     ll x = num - sum;
+    //     ll y = num2 - sum2;
+    //     y = y/x;
+    //     ll xr = (x+y)/2;
+    //     ll yr = xr - x;
+    //     return {(int)xr, (int)yr};
+    
     // }
